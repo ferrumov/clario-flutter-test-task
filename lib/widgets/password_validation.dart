@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:clario_auth_test_app/utils/all.dart';
 import 'package:clario_auth_test_app/styles/colors.dart';
 
-class _ValidationText extends StatelessWidget {
-  const _ValidationText({super.key, required this.label, required this.color});
+class ValidationText extends StatelessWidget {
+  const ValidationText({super.key, required this.label, required this.color});
 
   final String label;
   final Color color;
@@ -64,7 +64,7 @@ class _PasswordValidationState extends State<PasswordValidation> {
             var index = texts.indexOf(element);
             var color = colors[index];
 
-            return _ValidationText(label: element, color: color);
+            return ValidationText(label: element, color: color);
           }).toList();
 
           return Flex(
